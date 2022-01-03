@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="wrap">
+    <div class="main-container">
+        <div class="top-section">
+            <div class="logo"id="logo">
+                <h2>calc</h2>
+            </div>
+            <div class="theme-section" id="theme">
+                <div class="head">  <h6>THEME</h6></div>
+              
+                <div class="theme-bar">
+                    <div class="num">
+                        <div class="num1" id="n1">1</div>
+                        <div class="num2"id="n2">2</div>
+                        <div class="num3"id="n3">3</div>
+                    </div>
+                    <div class="bar" id="b">
+                        <div class="ball"id="move"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calc-answer">
+            <input type="text" name="calcarea" id="answer" placeholder="0">
+        </div>
+        <div class="operation" id="operation">
+            <div class="grid-area">
+               <button type="submit" id="col" onclick="type(7)">7</button>
+                <button type="submit" id="col"  onclick="type(8)">8</button>
+               <button type="submit" id="col"  onclick="type(9)">9</button>
+              <button type="submit" id="col"  onclick="type(11)">DEL</button>
+                <button type="submit" id="col" onclick="type(4)">4</button>
+               <button type="submit" id="col" onclick="type(5)">5</button>
+                <button type="submit" id="col"  onclick="type(6)">6</button>
+               <button type="submit" id="col"  onclick="type(16)">+</button>
+               <button type="submit" id="col"  onclick="type(1)">1</button>
+               <button type="submit" id="col" onclick="type(2)">2</button>
+               <button type="submit" id="col"  onclick="type(3)">3</button>
+              <button type="submit" id="col" onclick="type(15)">-</button>
+                <button type="submit" id="col" onclick="type(12)">.</button>
+               <button type="submit" id="col" onclick="type(0)">0</button>
+                <button type="submit" id="col" onclick="type(13)">/</button>
+              <button type="submit" id="col" onclick="type(14)">x</button>
+            </div>
+            <div class="submit">
+                
+                   <button type="reset"id="reset">RESET</button>
+                   <button type="submit" id="submit">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function type(n){
+        var x=document.getElementById("answer").value;
+        if (condition) {
+            
+        }
+    }
+</script>
+    <script src="j.js"></script>
+</body>
+</html>

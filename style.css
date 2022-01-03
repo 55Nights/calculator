@@ -1,0 +1,237 @@
+:root{
+    /*theme 1 colors*/
+ --back:  hsl(222, 26%, 31%);
+ --keypad: hsl(223, 31%, 20%);
+ --screen: hsl(224, 36%, 15%);
+ --keybac: hsl(225, 21%, 49%);
+ --keyshad: hsl(224, 28%, 35%);
+ --red: hsl(6, 63%, 50%);
+ --redback:hsl(6, 70%, 34%);
+ --orange: hsl(30, 25%, 89%);
+ --grayOra:hsl(28, 16%, 65%);
+ --textCol:hsl(221, 14%, 31%);
+ /*theme2*/
+ --back2:hsl(0, 0%, 90%);
+ --keypd2: hsl(0, 5%, 81%);
+ --scren2: hsl(0, 0%, 93%);
+ --keyback2: hsl(185, 42%, 37%);
+ --keyshd2:hsl(25, 99%, 27%);
+ --grayyellow: hsl(45, 7%, 89%);
+ --shadow:hsl(35, 11%, 61%);
+ --text:hsl(60, 10%, 19%);
+ /*theme3*/
+--backgd: hsl(268, 75%, 9%);
+--screen3: hsl(268, 71%, 12%);
+--keyback: hsl(281, 89%, 26%);
+--keyshadow: hsl(285, 91%, 52%);
+--Purecyan: hsl(176, 100%, 44%);
+--Softcyan: hsl(177, 92%, 70%);
+--darkviolet: hsl(268, 47%, 21%);
+--Darkmagenta: hsl(290, 70%, 36%);
+--Lightyellow: hsl(52, 100%, 62%);
+--darkblue: hsl(198, 20%, 13%);
+--White: hsl(0, 0, 100%);
+}
+/*general css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     height: 100%;
+    background-color: var(--back);
+    font-family: 'Spartan', sans-serif;
+}
+/*structure top-bottom*/
+.main-container{
+    position: relative;
+    top: 10em;
+    width: 500px;
+    margin: auto;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+}
+.theme-section{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    color: var(--orange);
+    font-size: 10px;
+}
+.head{
+    position: relative;
+    left: 17em;
+    margin-top: 15px;
+   
+
+}
+.num{
+    display: flex;
+    justify-content: space-between;
+    width: 4em;
+}
+.bar{
+    background-color: var(--keypad);
+    width: 4em;
+    height: 1.5em;
+    border-radius: 10px;
+    padding: 2px;
+}
+#n1,#n2,#n3{
+    cursor: pointer;
+}
+.ball{
+    position: relative;
+    background-color: var(--redback);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.calc-answer{
+   margin: 1em;
+   font-family: 'Spartan', sans-serif;
+   
+}
+input{
+    width: 100%;
+    height: 80px;
+    text-align: end;
+    border-radius: 5px;
+    background-color: var(--screen);
+    color: white;
+    font-size: 2em;
+    
+}
+.operation{
+    margin: 1em;
+    background-color: var(--keypad);
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+.grid-area{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding-left: 1.5em;
+}
+#col{
+    width: 70px;
+    height: 50px;
+   text-align: center;
+   
+    border-radius: 5px;
+   
+   padding: 1em;
+}
+.col2{
+    background-color: brown;
+}
+.submit{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+    margin-top: -2em;
+}
+#reset,#submit{
+    width: 100%;
+    height: 1em;
+    text-align: center;
+    height: 3em;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+}
+#reset{
+    background-color: var(--keybac);
+  
+}
+#submit{
+   background-color: var(--red);
+   margin-left: 1em;
+}
+/*media querries*/
+@media only screen and (max-width:700px)
+ {
+    .main-container{
+        width: 100%;
+        margin-top: -9em;
+    }
+    .top-section{
+        width: 100%;
+    padding: 1em;
+        height: 100px;
+    }
+    .logo{
+        width: 50%;
+        font-size: 2em;
+        
+    }
+    .theme-section{
+        width: 50%;
+        padding-left: 1em;
+        justify-content: space-between;
+    }
+    .head{
+        left: 3em;
+        font-size: 2em;
+    }
+    .calc-answer{
+        width: 90%;
+        margin-bottom: 2em;
+    }
+    input{
+        width: 100%;
+        padding: 1em;
+    }
+    .operation{
+        width: 90%;
+       margin: 1em;
+    }
+    .grid-area{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 1em;
+    }
+    .column{
+        width: 60px;
+       box-shadow: 1px 5px var(--grayOra);
+        
+    }
+}
+
+/*theme2*/
+.t2{
+    width: 70px;
+    height: 50px;
+   text-align: center;
+    border-radius: 5px;
+   padding: 1em;
+    background-color: var(--keypd2);
+    color: var(--text);
+    box-shadow:  10px 10px var(--shadow);
+}
+/*theme3*/
+.c3{
+    width: 70px;
+    height: 50px;
+   text-align: center;
+    border-radius: 5px;
+   padding: 1em;
+    background-color: var(--keyback);
+    color: var(--Lightyellow);
+    box-shadow:  10px 10px var(--shadow);
+}
