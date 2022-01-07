@@ -62,3 +62,7 @@ function theme3() {
     submit.style.backgroundColor="var(--Purecyan)";
 }
 
+function type(x){
+    
+    console.log("hello");
+}
