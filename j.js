@@ -1,7 +1,52 @@
+ class Calculator{
+     constructor(prevOperText,curOperText){
+         this.prevOperText=prevOperText
+         this.curOperText=curOperText
+     }
+     clear(){
+        this.currentOperand=''
+        this.previousOperand=''
+        this.operation= undefined
+        this.clear()
+     }
+     delete(){
 
-var n1=document.getElementById("n1");
-var n2=document.getElementById("n2");
-var n3=document.getElementById("n3");
+     }
+     appendNumber(number){
+        this.currentOperand=number
+     }
+     chooseOperation(operation){
+
+     }
+     compute(){
+
+     }
+     updateDisplay(){
+     this.curOperText.innerText=this.currentOperand
+     }
+ }
+
+ 
+ const numButtons=document.querySelectorAll('[data-number]')
+ const opButton=document.querySelectorAll('[data-operation]')
+ const equalButton=document.querySelector('[data-equals]')
+ const delButton=document.querySelector('[data-delet]')
+ const allclear=document.querySelector('[data-all-clear]')
+ const prevOperText=document.querySelector('[data-previous-operand]')
+ const curOperText= document.querySelector('[data-current-operand]')
+const calculator = new Calculator(prevOperText,curOperText)
+numButtons.forEach(button=>{
+    button.addEventListener('click',()=>{
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
+})
+
+/*
+
+var n1=document.getElementById("num1");
+var n2=document.getElementById("num2");
+var n3=document.getElementById("num3");
 var ball=document.getElementById("move");
 var logo= document.getElementById("logo");
 var themeSection=document.getElementById("theme");
@@ -10,7 +55,7 @@ var bar=document.getElementById("b");
 var bdy=document.body;
 var reset=document.getElementById("reset");
 var submit=document.getElementById("submit");
-var op=document.getElementById("operation");
+ 
 
 n1.addEventListener("click",theme1);
 function theme1() {
@@ -61,8 +106,4 @@ function theme3() {
     reset.style.backgroundColor="var(--darkviolet)";
     submit.style.backgroundColor="var(--Purecyan)";
 }
-
-function type(x){
-    
-    console.log("hello");
-}
+*/

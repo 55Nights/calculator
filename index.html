@@ -19,9 +19,9 @@
               
                 <div class="theme-bar">
                     <div class="num">
-                        <div class="num1" id="n1">1</div>
-                        <div class="num2"id="n2">2</div>
-                        <div class="num3"id="n3">3</div>
+                        <div  id="num1">1</div>
+                        <div id="num2">2</div>
+                        <div id="num3">3</div>
                     </div>
                     <div class="bar" id="b">
                         <div class="ball"id="move"></div>
@@ -30,31 +30,32 @@
             </div>
         </div>
         <div class="calc-answer">
-            <input type="text" name="calcarea" id="answer" placeholder="0">
+           <div data-previous-operand class="previous-operand"></div>
+           <div data-previous-operand class="current-operand"></div>
         </div>
         <div class="operation" id="operation">
             <div class="grid-area">
-               <button type="submit" id="col" onclick="type(7)">7</button>
-                <button type="submit" id="col"  onclick="type(8)">8</button>
-               <button type="submit" id="col"  onclick="type(9)">9</button>
-              <button type="submit" id="col"  onclick="type(11)">DEL</button>
-                <button type="submit" id="col" onclick="type(4)">4</button>
-               <button type="submit" id="col" onclick="type(5)">5</button>
-                <button type="submit" id="col"  onclick="type(6)">6</button>
-               <button type="submit" id="col"  onclick="type(16)">+</button>
-               <button type="submit" id="col"  onclick="type(1)">1</button>
-               <button type="submit" id="col" onclick="type(2)">2</button>
-               <button type="submit" id="col"  onclick="type(3)">3</button>
-              <button type="submit" id="col" onclick="type(15)">-</button>
-                <button type="submit" id="col" onclick="type(12)">.</button>
-               <button type="submit" id="col" onclick="type(0)">0</button>
-                <button type="submit" id="col" onclick="type(13)">/</button>
-              <button type="submit" id="col" onclick="type(14)">x</button>
+              <button data-number>7</button>
+              <button data-number>8</button>
+              <button data-number>9</button>
+              <button data-delet>DEL</button>
+              <button data-number>4</button>
+              <button data-number>5</button>
+              <button data-number>6</button>
+              <button data-operation>+</button>
+              <button data-number>1</button>
+              <button data-number>2</button>
+              <button data-number>3</button>
+              <button data-operation>-</button>
+              <button data-number>.</button>
+              <button data-number>0</button>
+              <button data-operation>/</button>
+              <button data-operation>*</button>
             </div>
             <div class="submit">
                 
-                   <button type="reset"id="reset">RESET</button>
-                   <button type="submit" id="submit">=</button>
+                   <button  data-all-clear type="reset"id="reset">RESET</button>
+                   <button data-equals type="submit" id="submit">=</button>
             </div>
         </div>
     </div>
