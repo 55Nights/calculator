@@ -32,6 +32,8 @@
 --Lightyellow: hsl(52, 100%, 62%);
 --darkblue: hsl(198, 20%, 13%);
 --White: hsl(0, 0, 100%);
+/*font*/
+--font: 2rem;
 }
 /*general css*/
 *{
@@ -51,7 +53,7 @@ body{
 .wrap{
     border: 2px solid red;
     height: 80vh;
-    padding: 2rem;
+    padding: 1rem;
    
 }
 .header{
@@ -101,7 +103,9 @@ ul{
     place-items: center;
    
 }
-.btn{
-    width: 50px;
-    aspect-ratio: 0.9;
+button{
+    width: 79px;
+    padding: 0.5rem;
+    font-size: var(--font);
+    text-align: center;
 }
