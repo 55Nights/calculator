@@ -37,6 +37,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
@@ -44,193 +45,50 @@ body{
      height: 100%;
     background-color: var(--back);
     font-family: 'Spartan', sans-serif;
+    color: white;
 }
 /*structure top-bottom*/
-.main-container{
-    position: relative;
-    top: 10em;
-    width: 500px;
-    margin: auto;
+.wrap{
+    border: 2px solid red;
+    height: 100vh;
 }
-.top-section{
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    width: 100px;
     display: flex;
     justify-content: space-between;
 }
-.logo{
-    color: white;
-}
-.theme-section{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    color: var(--orange);
-    font-size: 10px;
-}
-.head{
-    position: relative;
-    left: 17em;
-    margin-top: 15px;
+.slider{
+    width: 100px;
+    aspect-ratio: 4;
    
-
-}
-.num{
-    display: flex;
-    justify-content: space-between;
-    width: 4em;
-}
-.bar{
-    background-color: var(--keypad);
-    width: 4em;
-    height: 1.5em;
+    background-color: var(--screen);
+    padding: 4px;
     border-radius: 10px;
-    padding: 2px;
-}
-#n1,#n2,#n3{
-    cursor: pointer;
 }
 .ball{
-    position: relative;
-    background-color: var(--redback);
-    width: 9px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
     border-radius: 50%;
-    cursor: pointer;
-   
 }
-.calc-answer{
-   margin: 1em;
-   font-family: 'Spartan', sans-serif;
+.screen input{
+    border: 2px solid yellow;
     width: 100%;
-    height: 80px;
-    text-align: end;
-    border-radius: 5px;
-    background-color: var(--screen);
-    color: white;
-    font-size: 2em;
-    
+    height: 5rem;
+    padding: 2rem;
 }
-.operation{
-    margin: 1em;
-    background-color: var(--keypad);
-    color: white;
-    padding: 1em;
-    border-radius: 8px;
-}
-.grid-area{
-    position: relative;
-
+.grid-container
+{
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
-    width: 100%;
-    height: 40vh;
-    padding-left: 1.5em;
-}
-#col{
-    width: 70px;
-    height: 50px;
-   text-align: center;
-   
-    border-radius: 5px;
-   
-   padding: 1em;
-}
-.col2{
-    background-color: brown;
-}
-.submit{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1em;
-    margin-top: -2em;
-}
-#reset,#submit{
-    width: 100%;
-    height: 1em;
-    text-align: center;
-    height: 3em;
-    border-radius: 5px;
-    color: white;
-    font-family: 'Spartan', sans-serif;
-}
-#reset{
-    background-color: var(--keybac);
-  
-}
-#submit{
-   background-color: var(--red);
-   margin-left: 1em;
-}
-/*media querries*/
-@media only screen and (max-width:700px)
- {
-    .main-container{
-        width: 100%;
-        margin-top: -9em;
-    }
-    .top-section{
-        width: 100%;
-    padding: 1em;
-        height: 100px;
-    }
-    .logo{
-        width: 50%;
-        font-size: 2em;
-        
-    }
-    .theme-section{
-        width: 50%;
-        padding-left: 1em;
-        justify-content: space-between;
-    }
-    .head{
-        left: 3em;
-        font-size: 2em;
-    }
-    .calc-answer{
-        width: 90%;
-        margin-bottom: 2em;
-    }
-    input{
-        width: 100%;
-        padding: 1em;
-    }
-    .operation{
-        width: 90%;
-       margin: 1em;
-    }
-    .grid-area{
-        width: 100%;
-        height: 35vh;
-        margin-bottom: 1em;
-    }
-    .column{
-        width: 60px;
-       box-shadow: 1px 5px var(--grayOra);
-        
-    }
-}
-
-/*theme2*/
-.t2{
-    width: 70px;
-    height: 50px;
-   text-align: center;
-    border-radius: 5px;
-   padding: 1em;
-    background-color: var(--keypd2);
-    color: var(--text);
-    box-shadow:  10px 10px var(--shadow);
-}
-/*theme3*/
-.c3{
-    width: 70px;
-    height: 50px;
-   text-align: center;
-    border-radius: 5px;
-   padding: 1em;
-    background-color: var(--keyback);
-    color: var(--Lightyellow);
-    box-shadow:  10px 10px var(--shadow);
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    padding: 0 2rem;
+    background-color: var(--screen);
 }
