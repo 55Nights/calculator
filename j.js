@@ -42,7 +42,7 @@ numButtons.forEach(button=>{
     })
 })
 
-/*
+
 
 var n1=document.getElementById("num1");
 var n2=document.getElementById("num2");
@@ -106,4 +106,3 @@ function theme3() {
     reset.style.backgroundColor="var(--darkviolet)";
     submit.style.backgroundColor="var(--Purecyan)";
 }
-*/
