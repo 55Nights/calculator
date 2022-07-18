@@ -87,13 +87,13 @@ ul{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 2rem;
+    grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     padding: 0 2rem;
     background-color: var(--screen);
 }
 .btn{
     border: 2px solid red;
-    width: 80px;
+    width: 50px;
     aspect-ratio: 0.9;
 }
