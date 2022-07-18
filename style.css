@@ -92,3 +92,8 @@ ul{
     padding: 0 2rem;
     background-color: var(--screen);
 }
+.btn{
+    border: 2px solid red;
+    width: 80px;
+    aspect-ratio: 0.9;
+}
